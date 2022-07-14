@@ -1,0 +1,52 @@
+body {
+  --primary: #d81b60;
+  --secondary: #f06292;
+  --background: rgb(230, 230, 230);
+  --on-primary: #ffffff;
+  --on-secondary: #000000;
+}
+
+body.dark {
+  --primary: #ac144b;
+  --secondary: #bb4a70;
+  --background: rgb(49, 49, 49);
+  --on-primary: #ffffff;
+  --on-secondary: #dddddd;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.navbar {
+  background: var(--primary);
+}
+.navbar .navbar-brand {
+  color: var(--on-primary);
+}
+
+.personContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+  justify-content: space-around;
+}
+
+.person {
+  background: var(--secondary);
+  color: var(--on-secondary);
+  max-height: 650px;
+  overflow-y: auto;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-body img {
+  height: 50px;
+}/*# sourceMappingURL=index.css.map */
